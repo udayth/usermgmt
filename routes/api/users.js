@@ -109,7 +109,7 @@ router.post("/login", (req, res) => {
 
 // @route POST api/users/retrieve
 // @desc retrieve user
-// @access Private
+// @access Public
 router.post("/retrieve", (req, res) => {
     // Form validation
     const { errors, isValid } = validateRetrieveInput(req.body);
@@ -126,7 +126,7 @@ router.post("/retrieve", (req, res) => {
             return res.status(404).json({ emailnotfound: "Email not found" });
         }
         else {
-            return res.json({ user: user.name, surname: user.surname });
+            return res.json({ user: user.name, surname: user.surname, gender: user.gender, region: user.region, phone: user.phone, email: user.email, password: user.password, photo: user.photo });
         }
     });
 });
