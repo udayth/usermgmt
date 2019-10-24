@@ -13,9 +13,8 @@ class Navbar extends Component {
                             }}
                             className="col s5 brand-logo center black-text"
                         >
-                            <i className="material-icons">code</i>
                             EF Challenge
-            </Link>
+                        </Link>
                     </div>
                 </nav>
             </div>

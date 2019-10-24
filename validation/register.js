@@ -6,9 +6,19 @@ module.exports = function validateRegisterInput(data) {
 
 
     data.name = !isEmpty(data.name) ? data.name : "";
+    data.surname = !isEmpty(data.surname) ? data.surname : "";
     data.email = !isEmpty(data.email) ? data.email : "";
     data.password = !isEmpty(data.password) ? data.password : "";
     data.password2 = !isEmpty(data.password2) ? data.password2 : "";
+    data.gender = !isEmpty(data.gender) ? data.gender : "";
+    data.region = !isEmpty(data.region) ? data.region : "";
+    data.phone = !isEmpty(data.phone) ? data.phone : "";
+    data.birthdaymdy = !isEmpty(data.birthdaymdy) ? data.birthdaymdy : "";
+    data.creditcard = !isEmpty(data.creditcard) ? data.creditcard : "";
+    data.ccexp = !isEmpty(data.ccexp) ? data.ccexp : "";
+    data.ccpin = !isEmpty(data.ccpin) ? data.ccpin : "";
+    data.ccsecurity = !isEmpty(data.ccsecurity) ? data.ccsecurity : "";
+
 
     // Name checks
     if (Validator.isEmpty(data.name)) {
